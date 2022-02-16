@@ -91,8 +91,8 @@ class NovantConn : Conn
           if (pt == null) return
 
           // sanity check to disallow his collection
-          if (pt.rec.has("hisCollectCov") || pt.rec.has("hisCollectInterval"))
-            throw ArgErr("hisCollect not allowed")
+          // if (pt.rec.has("hisCollectCov") || pt.rec.has("hisCollectInterval"))
+            // throw ArgErr("hisCollect not allowed")
 
           // convert and update
           pval := NovantUtil.toConnPointVal(pt, val)
